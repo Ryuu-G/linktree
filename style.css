@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+@keyframes breathing {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-breathing {
+    animation: breathing 2s infinite;
+}
+
+.hover\:shine {
+    transition: filter 0.3s ease-in-out;
+}
+
+.hover\:shine:hover {
+    filter: drop-shadow(2px 2px 8px #f1faee);
+}
